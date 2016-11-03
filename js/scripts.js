@@ -15,9 +15,9 @@ window.addEventListener('load', function() {
       awe.util.require([{
         capabilities: ['gum','webgl'],
         files: [ 
-          [ 'js/awe-standard-dependencies.js', 'js/awe-standard.js'+d],// base libraries
-          ['js/awe-jsartoolkit-dependencies.js','js/plugins/StereoEffect.js', 'js/plugins/VREffect.js'],// plugin dependencies
-          ['js/awe.marker_ar.js'+d,'js/plugins/awe.rendering_effects.js'+d]// plugins
+          [ 'js/libs/awe-standard-dependencies.js', 'js/libs/awe-standard.js'+d],// base libraries
+          ['js/libs/awe-jsartoolkit-dependencies.js','js/libs/plugins/StereoEffect.js', 'js/libs/plugins/VREffect.js'],// plugin dependencies
+          ['js/libs/awe.marker_ar.js'+d,'js/libs/plugins/awe.rendering_effects.js'+d]// plugins
         ],
         success: function() { 
 					awe.setup_scene();
@@ -32,7 +32,7 @@ window.addEventListener('load', function() {
             position: {x: 0,y: 0,z: 0,},
             rotation: { x:180, y:0, z:0 },
             material: {type: 'phong',color: 0xFFFFFF},
-            texture: {path: 'texture/giraffa.png'},
+            texture: {path: 'img/giraffa.png'},
           }, {poi_id: 'jsartoolkit_marker_64' });
 
 	        awe.pois.add({ id:'jsartoolkit_marker_3', position: { x:0, y:0, z:0 }, visible: false });
@@ -45,7 +45,7 @@ window.addEventListener('load', function() {
             position: {x: 0,y: 0,z: 0,},
             rotation: { x:180, y:0, z:0 },
             material: {type: 'phong',color: 0xFFFFFF},
-            texture: {path: 'texture/panthera.png'},
+            texture: {path: 'img/panthera.png'},
           }, {poi_id: 'jsartoolkit_marker_3' });
 
 	        awe.plugins.view('render_effects').enable();
