@@ -15,18 +15,18 @@ window.addEventListener('load', function() {
       awe.util.require([{
         capabilities: ['gum','webgl'],
         files: [ 
-          [ 'js/libs/awe-standard-dependencies.js', 'js/libs/awe-standard.js'+d],// base libraries
+          ['js/libs/awe-standard-dependencies.js', 'js/libs/awe-standard.js'+d],// base libraries
           ['js/libs/awe-jsartoolkit-dependencies.js','js/libs/plugins/StereoEffect.js', 'js/libs/plugins/VREffect.js'],// plugin dependencies
           ['js/libs/awe.marker_ar.js'+d,'js/libs/plugins/awe.rendering_effects.js'+d]// plugins
         ],
         success: function() { 
 					awe.setup_scene();
-					awe.settings.update({data:{value: 'ar'}, where:{id: 'view_mode'}})
+					awe.settings.update({data:{value: 'ar'}, where:{id: 'view_mode'}});
+          /*******************************************************************/
 
           awe.pois.add({ id:'jsartoolkit_marker_64', position: { x:0, y:0, z:0 }, visible: false });
           awe.projections.add({
-            id: 'marker_projection2',
-            //geometry: {path: 'horse.obj', x: 10, y: 10, z: 10},
+            id: 'projection',
             geometry: {shape: 'plane', height: 60, width: 60},
             scale: {x: 5, y: 5, z: 5 },
             position: {x: 0,y: 0,z: 0,},
@@ -37,9 +37,7 @@ window.addEventListener('load', function() {
 
 	        awe.pois.add({ id:'jsartoolkit_marker_3', position: { x:0, y:0, z:0 }, visible: false });
           awe.projections.add({
-            id: 'projection',
-            //id: 'marker_projection',
-            //geometry: {path: 'horse.obj', x: 10, y: 10, z: 10},
+            id: 'projection2',
             geometry: {shape: 'plane', height: 60, width: 60},
             scale: {x: 5, y: 5, z: 5 },
             position: {x: 0,y: 0,z: 0,},
@@ -48,6 +46,7 @@ window.addEventListener('load', function() {
             texture: {path: 'img/panthera.png'},
           }, {poi_id: 'jsartoolkit_marker_3' });
 
+          /********************************************************************/
 	        awe.plugins.view('render_effects').enable();
 	        awe.plugins.view('jsartoolkit').enable();
 	      },
