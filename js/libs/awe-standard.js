@@ -2680,7 +2680,8 @@ if (!parent) {
             c.width = width;
             c.height = height;
             
-            cc.fillStyle = "white";
+            //cc.fillStyle = "white";
+            cc.fillStyle = "black";
             cc.fillRect(0, 0, c.width, c.height);
             
             
@@ -2731,12 +2732,15 @@ if (!parent) {
               }, false);
             }
             
-            cc.font = '20px sans-serif';
+            //cc.font = '20px sans-serif';
+            cc.font = '12px sans-serif';
             cc.textAlign = 'center';
             cc.textBaseline = 'middle';
             
-            cc.fillStyle = '#000000';
-            cc.fillText('LOADING TEXTURE', width/2, height/2, width);
+            //cc.fillStyle = '#000000';
+            cc.fillStyle = '#008FD1';
+            //cc.fillText('LOADING TEXTURE', width/2, height/2, width);
+            cc.fillText('Cargando Componentes...', width/2, height/2, width);
             
             texture = new THREE.Texture(c);
             texture.needsUpdate = true;
