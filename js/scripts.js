@@ -108,6 +108,61 @@ window.addEventListener('load', function() {
             texture: {path: 'img/BitsE.png'},
           }, {poi_id: 'jsartoolkit_marker_15' });
 
+          awe.pois.add({ id:'jsartoolkit_marker_16', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection6',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/BitsF.png'},
+          }, {poi_id: 'jsartoolkit_marker_16' });
+
+          awe.pois.add({ id:'jsartoolkit_marker_17', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection7',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/BitsG.png'},
+          }, {poi_id: 'jsartoolkit_marker_17' });
+
+          awe.pois.add({ id:'jsartoolkit_marker_18', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection8',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/BitsH.png'},
+          }, {poi_id: 'jsartoolkit_marker_18' });
+
+          awe.pois.add({ id:'jsartoolkit_marker_19', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection9',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/BitsI.png'},
+          }, {poi_id: 'jsartoolkit_marker_19' });
+
+          awe.pois.add({ id:'jsartoolkit_marker_20', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection10',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/Bitsj.png'},
+          }, {poi_id: 'jsartoolkit_marker_20' });
+
           /*awe.pois.add({ id:'jsartoolkit_marker_11', position: { x:0, y:0, z:0 }, visible: false });
           awe.projections.add({
             id: 'projection3',
