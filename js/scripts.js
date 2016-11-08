@@ -1,3 +1,8 @@
+var geometria = {shape: 'plane', height: 60, width: 60};
+var escala = {x: 2, y: 2, z: 2 };
+var posicion = {x: 0,y: 0,z: 0,};
+var rotacion = { x:180, y:0, z:0 };
+
 window.addEventListener('load', function() {
   window.awe.init({
     device_type: awe.AUTO_DETECT_DEVICE_TYPE,
@@ -26,7 +31,7 @@ window.addEventListener('load', function() {
 
           awe.pois.add({ id:'jsartoolkit_marker_64', position: { x:0, y:0, z:0 }, visible: false });
           awe.projections.add({
-            id: 'projection',
+            id: 'projectionP',
             geometry: {shape: 'plane', height: 60, width: 60},
             scale: {x: 5, y: 5, z: 5 },
             position: {x: 0,y: 0,z: 0,},
@@ -37,7 +42,7 @@ window.addEventListener('load', function() {
 
 	        awe.pois.add({ id:'jsartoolkit_marker_3', position: { x:0, y:0, z:0 }, visible: false });
           awe.projections.add({
-            id: 'projection2',
+            id: 'projectionP2',
             geometry: {shape: 'plane', height: 60, width: 60},
             scale: {x: 5, y: 5, z: 5 },
             position: {x: 0,y: 0,z: 0,},
@@ -49,6 +54,50 @@ window.addEventListener('load', function() {
           /********************************************************************/
 
           awe.pois.add({ id:'jsartoolkit_marker_11', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection1',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/guacamaya.png'},
+          }, {poi_id: 'jsartoolkit_marker_11' });
+
+          awe.pois.add({ id:'jsartoolkit_marker_12', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection2',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/chimpances.png'},
+          }, {poi_id: 'jsartoolkit_marker_12' });
+
+          awe.pois.add({ id:'jsartoolkit_marker_13', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection3',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/giraffa.png'},
+          }, {poi_id: 'jsartoolkit_marker_13' });
+
+          awe.pois.add({ id:'jsartoolkit_marker_14', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection4',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/panthera.png'},
+          }, {poi_id: 'jsartoolkit_marker_14' });
+
+          /*awe.pois.add({ id:'jsartoolkit_marker_11', position: { x:0, y:0, z:0 }, visible: false });
           awe.projections.add({
             id: 'projection3',
             geometry: {shape: 'plane', height: 60, width: 60},
