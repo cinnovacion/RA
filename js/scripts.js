@@ -61,7 +61,7 @@ window.addEventListener('load', function() {
             position: posicion,
             rotation: rotacion,
             material: {type: 'phong',color: 0xFFFFFF},
-            texture: {path: 'img/guacamaya.png'},
+            texture: {path: 'img/BitsA.png'},
           }, {poi_id: 'jsartoolkit_marker_11' });
 
           awe.pois.add({ id:'jsartoolkit_marker_12', position: { x:0, y:0, z:0 }, visible: false });
@@ -72,7 +72,7 @@ window.addEventListener('load', function() {
             position: posicion,
             rotation: rotacion,
             material: {type: 'phong',color: 0xFFFFFF},
-            texture: {path: 'img/chimpances.png'},
+            texture: {path: 'img/BitsB.png'},
           }, {poi_id: 'jsartoolkit_marker_12' });
 
           awe.pois.add({ id:'jsartoolkit_marker_13', position: { x:0, y:0, z:0 }, visible: false });
@@ -83,7 +83,7 @@ window.addEventListener('load', function() {
             position: posicion,
             rotation: rotacion,
             material: {type: 'phong',color: 0xFFFFFF},
-            texture: {path: 'img/giraffa.png'},
+            texture: {path: 'img/BitsC.png'},
           }, {poi_id: 'jsartoolkit_marker_13' });
 
           awe.pois.add({ id:'jsartoolkit_marker_14', position: { x:0, y:0, z:0 }, visible: false });
@@ -94,8 +94,19 @@ window.addEventListener('load', function() {
             position: posicion,
             rotation: rotacion,
             material: {type: 'phong',color: 0xFFFFFF},
-            texture: {path: 'img/panthera.png'},
+            texture: {path: 'img/BitsD.png'},
           }, {poi_id: 'jsartoolkit_marker_14' });
+
+          awe.pois.add({ id:'jsartoolkit_marker_15', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection5',
+            geometry: geometria,
+            scale: escala,
+            position: posicion,
+            rotation: rotacion,
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/BitsE.png'},
+          }, {poi_id: 'jsartoolkit_marker_15' });
 
           /*awe.pois.add({ id:'jsartoolkit_marker_11', position: { x:0, y:0, z:0 }, visible: false });
           awe.projections.add({
