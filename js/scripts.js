@@ -47,6 +47,30 @@ window.addEventListener('load', function() {
           }, {poi_id: 'jsartoolkit_marker_3' });
 
           /********************************************************************/
+
+          awe.pois.add({ id:'jsartoolkit_marker_11', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection3',
+            geometry: {shape: 'plane', height: 60, width: 60},
+            scale: {x: 5, y: 5, z: 5 },
+            position: {x: 0,y: 0,z: 0,},
+            rotation: { x:180, y:0, z:0 },
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/guacamaya.png'},
+          }, {poi_id: 'jsartoolkit_marker_11' });
+
+          awe.pois.add({ id:'jsartoolkit_marker_12', position: { x:0, y:0, z:0 }, visible: false });
+          awe.projections.add({
+            id: 'projection4',
+            geometry: {shape: 'plane', height: 60, width: 60},
+            scale: {x: 5, y: 5, z: 5 },
+            position: {x: 0,y: 0,z: 0,},
+            rotation: { x:180, y:0, z:0 },
+            material: {type: 'phong',color: 0xFFFFFF},
+            texture: {path: 'img/chimpances.png'},
+          }, {poi_id: 'jsartoolkit_marker_12' });
+
+          /********************************************************************/
 	        awe.plugins.view('render_effects').enable();
 	        awe.plugins.view('jsartoolkit').enable();
 	      },
