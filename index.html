@@ -11,20 +11,22 @@
 	</head>
 	<body>
 		<div id="menu-back"></div>
-		<div id="menu">
-			<div class="list"></div>
-			<div class="list">
-				<button class="active" onclick="window.location.href='index.html'">* Bits</button>
-			</div>
-			<div class="list">
-				<button href="animales.html" onclick="window.location.href='animales.html'">* Animales</button>
-			</div>
-			<div class="list">
-				<button href="plantas.html" onclick="window.location.href='plantas.html'">* Plantas</button>
-			</div>
-		</div>
+		<ul id="menu">
+			<li class="list" id="sep"></li>
+			<li class="list">
+				<button class="active" onclick="window.location.href='index.html'">Bits</button>
+			</li>
+			<li class="list">
+				<button href="animales.html" onclick="window.location.href='animales.html'">Animales</button>
+			</li>
+			<li class="list">
+				<button href="plantas.html" onclick="window.location.href='plantas.html'">Plantas</button>
+			</li>
+		</ul>
 		<canvas id="debugCanvas"></canvas>
-  		<div id="container"></div>
+
+		<div id="container"></div>
+
 	</body>
 
 </html>
