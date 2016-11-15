@@ -2,7 +2,7 @@ var geometria = {shape: 'plane', height: 60, width: 60};
 var escala = {x: 2, y: 2, z: 2 };
 var posicion = {x: 0,y: 0,z: 0,};
 var rotacion = { x:180, y:0, z:0 };
-var animales = ['cactus','girasol'];
+var animales = ['cactus','girasol','palmera','rosa'];
 
 window.addEventListener('load', function() {
   window.awe.init({
