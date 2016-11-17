@@ -63,6 +63,9 @@ button:hover {
   vertical-align: middle;
   text-align: center;
 }
+.min{
+  display: none;
+}
 
 @media screen and (max-width: 1200px) {
   #menu-back{
@@ -77,5 +80,14 @@ button:hover {
     width: 20%;
     height: 100%;
     float: left;
+  }
+  button {
+    padding: 5px;
+  }
+  .min{
+    display: block;
+  }
+  .max{
+    display: none;
   }
 }
